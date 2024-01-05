@@ -30,8 +30,6 @@ export class FileUploadComponent {
     if (this.selectedFile==undefined) return;
       let fileType = this.selectedFile.type;
       let fileExtension = MIME_TYPE_MAP[fileType];
-
-      // Eğer MIME türü bilinmiyorsa ya da desteklenmiyorsa, işlemi durdurabilir veya uyarı verebilirsiniz.
       if (!fileExtension) {
         console.error('Desteklenmeyen dosya türü!');
         return;
