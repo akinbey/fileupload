@@ -65,7 +65,6 @@ export class FileUploadComponent {
   uploadImage(date:string,type:string){
     if(this.selectedFile==undefined) return;
       // Dosya içeriğini okuyoz
-      //Resim yükleme işlemini yapınız
       var reader = new FileReader();
       reader.readAsDataURL(this.selectedFile);
       reader.onload = () => {
